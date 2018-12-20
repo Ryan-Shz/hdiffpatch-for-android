@@ -1,0 +1,24 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+
+android {
+    compileSdkVersion 26
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+    }
+
+    sourceSets {
+        main {
+            // Other configs
+            jni.srcDirs=["src/main/jni"]
+            jniLibs.srcDirs = ['libs']
+        }
+        externalNativeBuild{
+            ndkBuild{
+                path "src/main/jni/Android.mk"
+            }
+        }
+    }
+}
