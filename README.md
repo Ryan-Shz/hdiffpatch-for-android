@@ -1,8 +1,8 @@
 # hdiffpatch-for-android
-基于差分算法库的android ndk使用示例，开源库地址:
+基于开源差分算法库HDiffPatch的android ndk使用示例，开源库地址:
 > https://github.com/sisong/HDiffPatch
 
-示例中只提供了合成功能，也就是客户端所需要的合成算法。而差分算法一般在服务器中执行。
+本示例中只提供了合成功能，也就是客户端所需要的合成算法。而差分算法一般在服务器中执行。
 
 如果需要测试，可以通过编译该作者的源码，在linux中通过命令行生成差分包。
 
